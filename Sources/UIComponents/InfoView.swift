@@ -39,4 +39,19 @@ public final class InfoView: UIView {
             containerView.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
     }
+    
+    override public func layoutSubviews() {
+        super.layoutSubviews()
+        setupView()
+    }
+    
+    // MARK: Methods
+    private func setupView() {
+        // Gerekli herhangi bir özelleştirme yapılabilir
+    }
+    
+    public func configureViews(imageViewModel: ImageViewModel, labelModel: LabelModel) {
+        infoImageView.configure(with: imageViewModel)
+        infoLabel.configure(with: labelModel)
+    }
 }
