@@ -10,7 +10,6 @@ import UIKit
 public class InfoView: UIView {
     
     // MARK: Outlets
-    @IBOutlet private var containerView: UIView!
     @IBOutlet private weak var infoImageView: BaseImageView!
     @IBOutlet private weak var infoLabel: BaseLabel!
     
@@ -19,9 +18,15 @@ public class InfoView: UIView {
     }
     
     // 📌 Nib dosyasını SPM içindeki bundle ile yüklüyoruz.
-    public static func instantiate() -> InfoView {
-        let nib = UINib(nibName: "InfoView", bundle: bundle)
-        return nib.instantiate(withOwner: nil, options: nil).first as! InfoView
+    class func instanceFromNib() -> UIView {
+        guard let view = UINib(
+            nibName: String(describing: Self.self),
+            bundle: nil
+        ).instantiate(withOwner: nil,
+                      options: nil).first as? InfoView
+        else { return UIView() }
+        
+        return view
     }
     
     override public func layoutSubviews() {

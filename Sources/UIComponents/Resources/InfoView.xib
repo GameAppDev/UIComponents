@@ -7,15 +7,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InfoView" customModuleProvider="target">
-            <connections>
-                <outlet property="containerView" destination="Alf-b1-EdD" id="DNq-Vd-EzE"/>
-                <outlet property="infoImageView" destination="eZs-0j-kNK" id="Pq1-0s-kht"/>
-                <outlet property="infoLabel" destination="yPa-Um-LKi" id="BhZ-c6-oPG"/>
-            </connections>
-        </placeholder>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="Alf-b1-EdD">
+        <view contentMode="scaleToFill" id="Alf-b1-EdD" customClass="InfoView" customModule="UIComponents">
             <rect key="frame" x="0.0" y="0.0" width="375" height="24"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
@@ -54,6 +48,10 @@
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="infoImageView" destination="eZs-0j-kNK" id="zwb-RC-MNR"/>
+                <outlet property="infoLabel" destination="yPa-Um-LKi" id="C4Z-pZ-6s2"/>
+            </connections>
             <point key="canvasLocation" x="118" y="20"/>
         </view>
     </objects>
