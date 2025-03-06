@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "UIComponents",
     platforms: [
-        .iOS(.v12)
+        .iOS(.v13)
     ],
     products: [
         .library(
@@ -17,10 +17,7 @@ let package = Package(
     dependencies: [],
     targets: [
         .target(
-            name: "UIComponents",
-            resources: [
-                .process("Resources")
-            ]
+            name: "UIComponents"
         ),
     ]
 )
