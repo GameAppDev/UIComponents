@@ -20,7 +20,7 @@ public final class BaseLabel: UILabel, ConfigurableUI {
     public func configure(with model: LabelModel) {
         self.text = model.text
         self.textColor = model.textColor
-        self.font = model.font
+        self.font = UIFont(name: "Nunito-Bold", size: CGFloat(26))
         self.textAlignment = model.textAlignment
         self.numberOfLines = model.numberOfLines
         self.lineBreakMode = model.lineBreakMode ?? .byTruncatingTail
