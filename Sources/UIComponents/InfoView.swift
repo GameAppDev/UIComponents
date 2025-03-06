@@ -18,7 +18,7 @@ public class InfoView: UIView {
     }
     
     // 📌 Nib dosyasını SPM içindeki bundle ile yüklüyoruz.
-    /*public class func instanceFromNib() -> UIView {
+    public class func instanceFromNib() -> UIView {
         guard let view = UINib(
             nibName: "InfoView",
             bundle: bundle
@@ -27,18 +27,7 @@ public class InfoView: UIView {
         else { return UIView() }
         
         return view
-    }*/
-    
-    public class func instanceFromNib() -> UIView {
-        guard let view = UINib(
-            nibName: "InfoView",
-            bundle: Bundle(for: InfoView.self)  // InfoView class'ının bundle'ını kullan
-        ).instantiate(withOwner: nil, options: nil).first as? InfoView else {
-            return UIView()
-        }
-        return view
     }
-
     
     override public func layoutSubviews() {
         super.layoutSubviews()
