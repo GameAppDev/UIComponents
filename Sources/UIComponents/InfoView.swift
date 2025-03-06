@@ -18,7 +18,7 @@ public class InfoView: UIView {
     }
     
     // 📌 Nib dosyasını SPM içindeki bundle ile yüklüyoruz.
-    class func instanceFromNib() -> UIView {
+    public class func instanceFromNib() -> UIView {
         guard let view = UINib(
             nibName: String(describing: Self.self),
             bundle: nil
