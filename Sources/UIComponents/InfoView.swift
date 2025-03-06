@@ -19,7 +19,7 @@ public class InfoView: UIView {
     }
     
     // 📌 Nib dosyasını SPM içindeki bundle ile yüklüyoruz.
-    static func instantiate() -> InfoView {
+    public static func instantiate() -> InfoView {
         let nib = UINib(nibName: "CustomInfoView", bundle: bundle)
         return nib.instantiate(withOwner: nil, options: nil).first as! InfoView
     }
