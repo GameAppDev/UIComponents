@@ -21,7 +21,7 @@ public class InfoView: UIView {
     public class func instanceFromNib() -> UIView {
         guard let view = UINib(
             nibName: "InfoView",
-            bundle: nil
+            bundle: bundle
         ).instantiate(withOwner: nil,
                       options: nil).first as? InfoView
         else { return UIView() }
