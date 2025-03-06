@@ -7,7 +7,7 @@
 
 import UIKit
 
-public final class InfoView: UIView {
+public class InfoView: UIView {
     
     // MARK: Outlets
     @IBOutlet private var containerView: UIView!
@@ -54,4 +54,8 @@ public final class InfoView: UIView {
         infoImageView.configure(with: imageViewModel)
         infoLabel.configure(with: labelModel)
     }
+}
+
+public final class InfoContainerView: InfoView {
+    
 }
