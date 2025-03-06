@@ -1,6 +1,6 @@
 import UIKit
 
-class InfoView: UIView {
+public final class InfoView: UIView {
     
     private let stackView: UIStackView = {
         let stack = UIStackView()
