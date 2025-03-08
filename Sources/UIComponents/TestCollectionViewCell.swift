@@ -13,5 +13,8 @@ public class TestCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
+    public static func getNib() -> UINib {
+        return UINib(nibName: "TestCollectionViewCell", bundle: Bundle.module)
+    }
 }
