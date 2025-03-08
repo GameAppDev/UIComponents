@@ -7,9 +7,9 @@
 
 import UIKit
 
-class TestCollectionViewCell: UICollectionViewCell {
+public class TestCollectionViewCell: UICollectionViewCell {
 
-    override func awakeFromNib() {
+    public override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
